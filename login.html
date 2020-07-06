@@ -1,61 +1,22 @@
 <html>
     <head>
-        <style>
-            .login
-            {
-                width: 300px;
-                height: 350px;
-                border:2px solid black;
-                border-radius: 5px;
-                /* comandos usados para centralizar a div */
-                top:50%;
-                position:absolute;
-                left:50%;
-                transform: translate(-50%,-50%);
-                /* */
-                box-sizing: border-box;
-                padding: 68px 28px;
-                
-            }
-            h1
-            {
-                margin:0;
-                text-align: center;
-                
-            }
-            .login p,input
-            {
-                margin: 0;
-                margin-top:5px;
-            }
-            .login input[type="text"], input[type="password"]
-            {
-                width: 100%;
-            }
-            .login input[type="submit"]
-            {
-                 margin-top: 10px;
-                 padding: 3px;
-                 display: block;
-                 margin-left: auto;
-                 margin-right: auto;
-                 
-            } 
-            
-        </style>
+        
+        <link rel="stylesheet" type="text/css" href="css/login.css"/>
     </head>
     <body>
         <div class="login">
             <h1>login</h1>
-            <form>
+           
                 <p>Usuário:</p>
-                <input type="text"></input>
+                <input type="text" id='usuario'></input>
                 <p>Senha:</p>
-                <input type="password"></input>
-                <input value="Logar" type="submit"></input>
+                <input type="password" id="senha"></input>
+                <button onclick="logar();">Logar</button>
                 
-            </form>
+            
+            
         </div>
-
+        <script type="text/javascript" src="login.js"></script>
+       
     </body>
 </html>
